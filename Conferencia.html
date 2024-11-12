@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conferencia - Coahuila MUN</title>
+    <link rel="stylesheet" href="Conferencia.css">
+    <script src="Conferencia.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="img" href="imgs/mun_logo_sin_letras-removebg-preview.png">
+</head>
+
+<body>
+    <header>
+        <div class="menu container">
+            <div class="logo">
+                <img src="imgs/mun_logo_sin_letras-removebg-preview.png" alt="Coahuila MUN Logo">
+            </div>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="imgs/lista.png" class="menu-icono" alt="Menu Icon">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Conferencia.html">Conferencia</a></li>
+                    <li><a href="Debate.html">Debate</a></li>
+                    <li><a href="Eventos.html">Eventos</a></li>
+                    <li><a href="#">Noticias</a></li>
+                    <li><a id="contacto" href="#social-section">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="location">
+        <div class="location-content">
+            <div class="location-text">
+                <h2>Lugar del Evento</h2>
+                <hr>
+                <p>El lugar de la conferencia será en el prestigioso Centro Cultural Universitario de la Universidad
+                    Autónoma de Coahuila, un espacio emblemático y perfectamente equipado para acoger tanto la ceremonia
+                    de apertura como la de clausura del MUN Coahuila.<br><br>
+                    Este recinto cuenta con una gran capacidad para más de 500 personas, así como salas de conferencia y
+                    salones de usos múltiples, asegurando un ambiente cómodo y adecuado para la congregación de todos
+                    los participantes y asistentes a estos eventos importantes.<br><br>
+                    Al ser el primer evento de este tipo que incluye tanto a preparatorias como a universidades públicas
+                    y privadas, se abre una plataforma inédita para la interacción, el intercambio de ideas y la
+                    colaboración entre jóvenes de diferentes instituciones. Esto no solo fomentará la diplomacia y el
+                    liderazgo entre los estudiantes, sino que también posicionará a Coahuila como un referente en la
+                    organización de eventos académicos de alto impacto.</p>
+            </div>
+            <div id="map-container" class="gmap">
+                <iframe id="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57659.99756409076!2d-100.93226837793033!3d25.413182779337834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86880e266ed74a7d%3A0x442fcf76c73c25b5!2sCiudad%20Universitaria%20UAdeC!5e0!3m2!1ses!2smx!4v1725162996111!5m2!1ses!2smx"
+                    width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <img id="image" src="imgs/uadc.webp" alt="Imagen de la conferencia"
+                    style="display:none; width:500; height:450;">
+            </div>
+        </div>
+    </section>
+
+    <div class="event-container">
+        <h2>Programa del Evento</h2>
+        <hr>
+        <div class="content-wrapper">
+            <section class="event-program">
+                <div class="day active">
+                    <h3>DÍA 1</h3>
+                    <ul>
+                        <li>
+                            <strong>09:00 - 11:00 AM:</strong>
+                            <p>Registro</p>
+                        </li>
+                        <li>
+                            <strong>11:00 - 13:30 PM:</strong>
+                            <p>Ceremonia de Apertura</p>
+                        </li>
+                        <li>
+                            <strong>13:30 - 14:30 PM:</strong>
+                            <p>Comida</p>
+                        </li>
+                        <li>
+                            <strong>14:30 - 15:30 PM:</strong>
+                            <p>Conferencia Magistral</p>
+                        </li>
+                        <li>
+                            <strong>15:30 - 17:30 PM:</strong>
+                            <p>Sesión de Entrenamiento</p>
+                        </li>
+                        <li>
+                            <strong>17:30 - 19:00 PM:</strong>
+                            <p>Eventos Culturales</p>
+                        </li>
+                        <li>
+                            <strong>20:30 - 01:30 AM:</strong>
+                            <p>Noche 1 - Night Zero/Global Village</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="day">
+                    <h3>DÍA 2</h3>
+                    <ul>
+                        <li>
+                            <strong>09:00 - 13:30 PM:</strong>
+                            <p>1ra Sesión de Comité</p>
+                        </li>
+                        <li>
+                            <strong>13:30 - 14:30 PM:</strong>
+                            <p>Comida</p>
+                        </li>
+                        <li>
+                            <strong>14:30 - 17:30 PM:</strong>
+                            <p>2da Sesión de Comité</p>
+                        </li>
+                        <li>
+                            <strong>17:30 - 19:00 PM:</strong>
+                            <p>Eventos culturales</p>
+                        </li>
+                        <li>
+                            <strong>21:00 - 1:30 AM:</strong>
+                            <p>Noche 1 - Cabaret Night</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="day">
+                    <h3>DÍA 3</h3>
+                    <ul>
+                        <li>
+                            <strong>09:00 - 13:30 PM:</strong>
+                            <p>3ra Sesión de Comité</p>
+                        </li>
+                        <li>
+                            <strong>13:30 - 14:30 PM:</strong>
+                            <p>Comida</p>
+                        </li>
+                        <li>
+                            <strong>14:30 - 15:30 PM:</strong>
+                            <p>Conferencia</p>
+                        </li>
+                        <li>
+                            <strong>15:30 - 17:00 PM:</strong>
+                            <p>Ceremonia de Clausura</p>
+                        </li>
+                        <li>
+                            <strong>17:00 - 19:00 PM:</strong>
+                            <p>Eventos culturales</p>
+                        </li>
+                        <li>
+                            <strong>20:30 - 1:30 AM:</strong>
+                            <p>Noche 3 - Farewell Party</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="event-image">
+                <img src="imgs/munconferencia.jpg" alt="">
+            </section>
+        </div>
+    </div>
+
+
+    <section id="committees-map">
+        <div class="container">
+            <h2>Mapa de los Comités</h2>
+            <hr>
+            <p>Consulta la ubicación de los comités dentro del recinto:</p>
+            <div class="map-container">
+                <img src="imgs/mapa1.png" alt="Mapa de los Comités 1">
+                <img src="imgs/mapa2.png" alt="Mapa de los Comités 2">
+            </div>
+        </div>
+    </section>
+
+    <div id="social-section" class="social-section">
+        <h2>¡Síguenos en nuestras redes sociales!</h2>
+        <p>Mantente al día con todo lo que sucede en COAHUILA MUN. ¡Síguenos en nuestras redes sociales!</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=61563311573724" target="_blank" rel="noopener noreferrer" class="social-icon fb">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.tiktok.com/@coahuila.mun?_t=8oURpIuCmbl&_r=1" target="_blank" rel="noopener noreferrer" class="social-icon tt">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://www.instagram.com/coahuilamun?igsh=MTdvN3U5NWQyMHI5dQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" class="social-icon ig">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://x.com/CoahuilaMun?t=YaU0gQRei3kxQuhXIT9X1Q&s=08" target="_blank" rel="noopener noreferrer" class="social-icon x">
+                <img src="imgs/x.png" alt="X logo" style="width: 24px; height: 24px;">
+            </a>
+        </div>
+    </div>
+
+    <section class="separador2">
+        <img id=br src="imgs/br.png" alt="">
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="imgs/mun logo letras.png" alt="Coahuila MUN Logo" class="footer-logo">
+            </div>
+            <div class="footer-center">
+                <ul class="footer-links">
+                    <li><a href="patrocinadores.html">Patrocinadores</a></li>
+                    <li><a href="#">Aviso Legal</a></li>
+                    <li><a href="#">Canal Ética</a></li>
+                </ul>
+                <p>COPYRIGHT © 2024 COAHUILA MUN - TODOS LOS DERECHOS RESERVADOS</p>
+            </div>
+            <div class="footer-right">
+                <div class="footer-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61563311573724" target="_blank"><i
+                            class="fab fa-facebook-f" style="width: 15px; height: 15px;"></i></a>
+                    <a href="https://www.tiktok.com/@coahuila.mun?_t=8oURpIuCmbl&_r=1" target="_blank"><i
+                            class="fab fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/coahuilamun?igsh=MTdvN3U5NWQyMHI5dQ%3D%3D&utm_source=qr"
+                        target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/CoahuilaMun?t=YaU0gQRei3kxQuhXIT9X1Q&s=08" target="_blank"><img
+                            src="imgs/x.png" class="icon-x" alt="X logo" style="width: 15px; height: 15px;"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
